@@ -2,13 +2,8 @@ import React, { Component } from "react";
 import { Grid, Cell, Button, Navigation } from "react-mdl";
 import Particles from "react-particles-js";
 import Typed from "react-typed";
-import { navigate } from "@reach/router";
 
 class Landing extends Component {
-  submitResume() {
-    navigate("/resume");
-  }
-
   render() {
     return (
       <div className="landing-grid">
@@ -29,11 +24,7 @@ class Landing extends Component {
                   fontSize: 24,
                 }}
               >
-                <Typed
-                  href="/resume"
-                  strings={["Hi I'm Sthitadhi Roy."]}
-                  typeSpeed={40}
-                />
+                <Typed strings={["Hi I'm Sthitadhi Roy."]} typeSpeed={40} />
               </Button>
             </div>
           </Cell>

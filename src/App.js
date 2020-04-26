@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Router } from "@reach/router";
+import Particles from "react-particles-js";
 import {
   Layout,
   Header,
@@ -61,6 +62,7 @@ class App extends Component {
               <Link to="/contact">Contact</Link>
             </Navigation>
           </Drawer>
+
           <Content>
             <div className="page-content" />
             <Main />
